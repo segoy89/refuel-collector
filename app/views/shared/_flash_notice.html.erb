@@ -1,0 +1,7 @@
+<% flash.each do |type, message| %>
+  <% color = set_color_by(type) %>
+  <div class="border-<%= color %>-500 bg-<%= color %>-200 text-<%= color %>-600 border border-l-4 container px-4 rounded-lg py-4 mx-auto font-sans font-medium text-center text-white flex justify-between mb-4">
+    <div><%= message %></div>
+    <div class="font-black mx-2 cursor-pointer" onclick='this.parentNode.remove()'>X</div>
+  </div>
+<% end %>
