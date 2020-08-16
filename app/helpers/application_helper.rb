@@ -1,7 +1,7 @@
 module ApplicationHelper
   def set_color_by(type)
     case type
-    when 'notice'
+    when 'notice', 'success'
       'green'
     when 'alert'
       'red'

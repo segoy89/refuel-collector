@@ -1,0 +1,36 @@
+<div class='text-gray-800 border-l-4 border rounded flex flex-col items-center justify-between mb-2 hover:shadow-md md:flex-row'>
+  <div class='px-4 py-2 flex flex-1 justify-between'>
+    <div>
+      <div class='text-sm font-semibold text-gray-600'>
+        Liters:
+      </div>
+      <%= refueling.liters %>
+    </div>
+    <div>
+      <div class='text-sm font-semibold text-gray-600'>
+        Kilometers:
+      </div>
+      <%= refueling.kilometers %>
+    </div>
+    <div>
+      <div class='text-sm font-semibold text-gray-600'>
+        Cost:
+      </div>
+      <%= refueling.cost %>
+    </div>
+    <div>
+      <div class='text-sm font-semibold text-gray-600'>
+        Added at:
+      </div>
+      <%= refueling.created_at.strftime('%F %H:%M:%S') %>
+    </div>
+  </div>
+  <div class='flex md:flex-col bg-gray-100 justify-center items-center self-stretch'>
+    <%= link_to edit_refueling_path(refueling), class: 'btn btn-default rounded-br-none rounded-t-none md:rounded-tr md:rounded-b-none flex-1 self-stretch bg-orange-200' do %>
+      ✎
+    <% end %>
+    <%= link_to refueling_path(refueling), method: :delete, class: 'btn btn-default rounded-t-none rounded-bl-none bg-red-200 flex-1 self-stretch' do %>
+      🗑
+    <% end %>
+  </div>
+</div>

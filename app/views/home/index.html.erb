@@ -1,0 +1,9 @@
+<%= link_to 'Add refueling', new_refueling_path, class: 'btn btn-lg btn-green btn-outline mb-4' %>
+
+<% if @refuelings.any? %>
+  <%= render @refuelings %>
+<% else %>
+  <div class='border rounded text-gray-500 italic flex h-40 w-full justify-center items-center'>
+    Nothing to display 🤷🏻‍♂️
+  </div>
+<% end %>
