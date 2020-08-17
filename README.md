@@ -1,24 +1,27 @@
-# README
+# ⛽️ Refuelings collector
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple app to helps you with tracking your car refuelings. Possible to store such information like:
 
-Things you may want to cover:
+- `liters` - how much liters you tanked
+- `kilometers` - howmany kilometers you drove since last refueling
+- `cost` - how much you spent for gasoline
+- `avg_fuel_consumption` - avarage fuel consumption per 100 kilometers
+- `note` - some notes if needed
 
-* Ruby version
+Started with [kickoff_tailwind](https://github.com/justalever/kickoff_tailwind).
 
-* System dependencies
+Use StimulusReflex to live update avarage fuel consumption.
 
-* Configuration
+## Demo
 
-* Database creation
+Deployed to `heroku`.
 
-* Database initialization
+ You can register with some fake email address - no confirmation needed.
 
-* How to run the test suite
+<https://refueling.herokuapp.com/>
 
-* Services (job queues, cache servers, search engines, etc.)
+## Techstack
 
-* Deployment instructions
-
-* ...
+- Rails 6
+- Ruby 2.7
+- Postgresql
