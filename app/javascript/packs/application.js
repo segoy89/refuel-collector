@@ -16,3 +16,12 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import "stylesheets/application"
+
+document.addEventListener('turbolinks:load', () => {
+  let hamburger = document.getElementById('hamburger')
+  let mobileNav = document.getElementById('mobileNav')
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden')
+  })
+})
