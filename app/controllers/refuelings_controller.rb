@@ -7,6 +7,10 @@ class RefuelingsController < ApplicationController
 
   def create
     @refueling = current_user.refuelings.build(refueling_params)
+    @refueling.avg_fuel_consumption = AvgFuelConsumption.new(
+      liters:     refueling_params[:liters],
+      kilometers: refueling_params[:kilometers]
+    ).count
     if @refueling.save
       flash[:success] = 'Refueling was created'
       redirect_to root_path
@@ -17,6 +21,10 @@ class RefuelingsController < ApplicationController
   end
 
   def update
+    @refueling.avg_fuel_consumption = AvgFuelConsumption.new(
+      liters:     refueling_params[:liters],
+      kilometers: refueling_params[:kilometers]
+    ).count
     if @refueling.update(refueling_params)
       flash[:success] = 'Refueling was updated'
       redirect_to root_path

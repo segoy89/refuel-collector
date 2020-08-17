@@ -4,21 +4,23 @@
   <div class='flex flex-col md:flex-row'>
     <div class='flex-1 md:mr-8'>
       <div>
-        <div class='flex' data-reflex='change->VacationReflex#count_days'>
+        <div class='flex' data-reflex='keyup->FuelReflex#avarage'>
           <div class='flex-1 mb-4 mr-2'>
             <%= f.label :liters, class: 'label' %>
-            <%= f.number_field :liters, class: 'input', step: 0.01 %>
+            <%= f.number_field :liters, class: 'input', step: 0.01, autocomplete: :off %>
           </div>
 
           <div class='flex-1 mb-4'>
             <%= f.label :kilometers, class: 'label' %>
-            <%= f.number_field :kilometers, class: 'input', step: 0.01 %>
+            <%= f.number_field :kilometers, class: 'input', step: 0.01, autocomplete: :off %>
           </div>
         </div>
 
         <div class='flex-1 mb-4'>
           <%= f.label :avg_fuel_consumption, class: 'label' %>
-          <%= f.number_field :avg_fuel_consumption, readonly: true, class: 'input bg-gray-100 cursor-not-allowed' %>
+          <div id='avg_fuel_consumption' class='input bg-gray-100 cursor-not-allowed' %>
+            <%= f.object.avg_fuel_consumption || '0.00' %>
+          </div>
         </div>
 
         <div class='flex-1 mb-4'>
