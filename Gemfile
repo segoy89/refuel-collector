@@ -57,4 +57,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'redis'
 gem 'stimulus_reflex', '3.3.0.pre2' # bump version to 3.3.0.pre2 to use selector morphs
