@@ -2,7 +2,6 @@
 
 class FuelReflex < ApplicationReflex
   def avarage
-    puts refueling_params
     avg_fuel_consumption = AvgFuelConsumption.new(
         liters:     refueling_params[:liters],
         kilometers: refueling_params[:kilometers]
