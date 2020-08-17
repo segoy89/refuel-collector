@@ -7,7 +7,7 @@ class AvgFuelConsumption
   end
 
   def count
-    return unless liters && kilometers
+    return unless Float(liters, exception: false) && Float(kilometers, exception: false)
 
     count_avg_fuel_consumption
   end
