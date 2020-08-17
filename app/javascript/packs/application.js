@@ -25,3 +25,5 @@ document.addEventListener('turbolinks:load', () => {
     mobileNav.classList.toggle('hidden')
   })
 })
+
+import "controllers"
