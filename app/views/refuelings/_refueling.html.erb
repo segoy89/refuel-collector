@@ -2,13 +2,13 @@
   <div class='px-4 py-2 flex-col flex-1 self-stretch justify-between'>
     <div class='flex flex-no-shrink'>
       <div class='flex-1'>
-        <div class='text-sm font-semibold text-gray-600'>
+        <div class='text-sm font-medium text-gray-600'>
           Liters:
         </div>
         <%= refueling.liters %>
       </div>
       <div class='flex-1'>
-        <div class='text-sm font-semibold text-gray-600'>
+        <div class='text-sm font-medium text-gray-600'>
           Kilometers:
         </div>
         <%= refueling.kilometers %>
@@ -17,20 +17,20 @@
 
     <div class='flex flex-col md:flex-row mb-4'>
       <div class='flex-1'>
-        <div class='text-sm font-semibold text-gray-600'>
+        <div class='text-sm font-medium text-gray-600'>
           Cost:
         </div>
         <%= refueling.cost %>
       </div>
       <div class='flex-1'>
-        <div class='text-sm font-semibold text-gray-600'>
+        <div class='text-sm font-medium text-gray-600'>
             Avg fuel consumption:
           </div>
           <%= refueling.avg_fuel_consumption %>
       </div>
     </div>
 
-    <div class='text-sm font-thin text-gray-600 mt-4'>
+    <div class='text-sm font-light text-gray-600 mt-4'>
       <%= refueling.created_at.strftime('%F %H:%M:%S') %>
     </div>
   </div>
