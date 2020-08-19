@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="antialiased">
+<html class="antialiased" data-theme=<%= user_signed_in? ? current_user.theme_color : 'light_theme' %>>
   <%= render "shared/head" %>
 
   <body class="container mx-auto font-normal leading-normal text-gray-800 bg-white">

@@ -16,6 +16,7 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import "stylesheets/application"
+import "controllers"
 
 document.addEventListener('turbolinks:load', () => {
   let hamburger = document.getElementById('hamburger')
@@ -25,5 +26,3 @@ document.addEventListener('turbolinks:load', () => {
     mobileNav.classList.toggle('hidden')
   })
 })
-
-import "controllers"

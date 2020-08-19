@@ -5,4 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :refuelings
+
+  enum theme_color: { light_theme: 0, dark_theme: 1 }
+
+  def change_theme_color
+    update_attribute :theme_color, light_theme? ? :dark_theme : :light_theme
+  end
 end
