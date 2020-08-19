@@ -18,8 +18,13 @@
 
         <div class='flex-1 mb-4'>
           <%= f.label :avg_fuel_consumption, class: 'label' %>
-          <div id='avg_fuel_consumption' class='input bg-gray-100 cursor-not-allowed' %>
-            <%= f.object.avg_fuel_consumption || '0.00' %>
+          <div class='flex'>
+            <div id='avg_fuel_consumption' class='input rounded-r-none bg-gray-100 cursor-not-allowed' %>
+              <%= f.object.avg_fuel_consumption || '0.00' %>
+            </div>
+            <div class='bg-gray-300 input w-40 rounded-l-none'>
+              L/100 km
+            </div>
           </div>
         </div>
 

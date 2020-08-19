@@ -1,13 +1,13 @@
-<div class='text-gray-800 border-l-4 border rounded flex flex-col items-center justify-between mb-2 hover:shadow-md md:flex-row'>
+<div class='text-gray-800 border-l-4 border border-gray-400 rounded-lg flex flex-col items-center justify-between mb-2 hover:shadow-md md:flex-row'>
   <div class='px-4 py-2 flex-col flex-1 self-stretch justify-between'>
     <div class='flex flex-no-shrink'>
-      <div class='flex-1'>
+      <div class='flex-1 mb-2'>
         <div class='text-sm font-medium text-gray-600'>
           Liters:
         </div>
         <%= refueling.liters %>
       </div>
-      <div class='flex-1'>
+      <div class='flex-1 mb-2'>
         <div class='text-sm font-medium text-gray-600'>
           Kilometers:
         </div>
@@ -16,29 +16,29 @@
     </div>
 
     <div class='flex flex-col md:flex-row mb-4'>
-      <div class='flex-1'>
+      <div class='flex-1 mb-2'>
+        <div class='text-sm font-medium text-gray-600'>
+            Avg fuel consumption:
+          </div>
+          <%= refueling.avg_fuel_consumption %> <span class='ml-2'>L/100 km</span>
+      </div>
+      <div class='flex-1 mb-2'>
         <div class='text-sm font-medium text-gray-600'>
           Cost:
         </div>
         <%= refueling.cost %>
       </div>
-      <div class='flex-1'>
-        <div class='text-sm font-medium text-gray-600'>
-            Avg fuel consumption:
-          </div>
-          <%= refueling.avg_fuel_consumption %>
-      </div>
     </div>
 
-    <div class='text-sm font-light text-gray-600 mt-4'>
+    <div class='text-sm font-light text-gray-600 mt-2'>
       <%= refueling.created_at.strftime('%F %H:%M:%S') %>
     </div>
   </div>
-  <div class='flex md:flex-col bg-gray-100 justify-center items-center self-stretch'>
-    <%= link_to edit_refueling_path(refueling), class: 'text-2xl flex items-center justify-center btn btn-default rounded-br-none rounded-t-none md:rounded-tr md:rounded-b-none flex-1 self-stretch' do %>
+  <div class='flex md:flex-col justify-center items-center self-stretch'>
+    <%= link_to edit_refueling_path(refueling), class: 'text-2xl flex items-center justify-center btn btn-default rounded-br-none rounded-t-none md:rounded-tr-lg md:rounded-b-none flex-1 self-stretch' do %>
       ✎
     <% end %>
-    <%= link_to refueling_path(refueling), method: :delete, class: 'text-lg flex items-center justify-center btn btn-default rounded-t-none rounded-bl-none flex-1 self-stretch' do %>
+    <%= link_to refueling_path(refueling), method: :delete, class: 'text-lg flex items-center justify-center btn btn-default rounded-t-none rounded-bl-none rounded-br-lg flex-1 self-stretch' do %>
       🗑
     <% end %>
   </div>
