@@ -4,7 +4,7 @@
   <div class='flex flex-col md:flex-row'>
     <div class='flex-1 md:mr-8'>
       <div>
-        <div class='flex' data-reflex='keyup->FuelReflex#avarage change->FuelReflex#avarage'>
+        <div class='flex' data-reflex='keyup->FuelReflex#average change->FuelReflex#average'>
           <div class='flex-1 mb-4 mr-2'>
             <%= f.label :liters, class: 'label' %>
             <%= f.number_field :liters, class: 'input', step: 0.01, autocomplete: :off %>
@@ -19,10 +19,10 @@
         <div class='flex-1 mb-4'>
           <%= f.label :avg_fuel_consumption, class: 'label' %>
           <div class='flex'>
-            <div id='avg_fuel_consumption' class='input rounded-r-none bg-gray-100 cursor-not-allowed' %>
+            <div id='avg_fuel_consumption' class='bg-gray-100 rounded-r-none cursor-not-allowed input' %>
               <%= f.object.avg_fuel_consumption || '0.00' %>
             </div>
-            <div class='bg-gray-300 input w-40 rounded-l-none'>
+            <div class='w-40 bg-gray-300 rounded-l-none input'>
               L/100 km
             </div>
           </div>

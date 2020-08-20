@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class FuelReflex < ApplicationReflex
-  def avarage
+  def average
     avg_fuel_consumption = AvgFuelConsumption.new(
         liters:     refueling_params[:liters],
         kilometers: refueling_params[:kilometers]

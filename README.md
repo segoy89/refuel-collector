@@ -5,12 +5,12 @@ Simple app to helps you with tracking your car refuelings. Possible to store suc
 - `liters` - how much liters you tanked
 - `kilometers` - howmany kilometers you drove since last refueling
 - `cost` - how much you spent for gasoline
-- `avg_fuel_consumption` - avarage fuel consumption per 100 kilometers
+- `avg_fuel_consumption` - average fuel consumption per 100 kilometers
 - `note` - some notes if needed
 
 Started with [kickoff_tailwind](https://github.com/justalever/kickoff_tailwind).
 
-Use StimulusReflex to live update avarage fuel consumption.
+Using StimulusReflex to live update average fuel consumption.
 
 ## Demo
 
