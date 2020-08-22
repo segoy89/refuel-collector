@@ -15,7 +15,7 @@ class RefuelingsController < ApplicationController
       flash[:success] = 'Refueling was created'
       redirect_to root_path
     else
-      flash[:alert] = @refueling.errors.full_messages.join('<br/>')
+      flash[:alert] = @refueling.errors.to_sentences.join('<br/>')
       render :new
     end
   end
@@ -29,7 +29,7 @@ class RefuelingsController < ApplicationController
       flash[:success] = 'Refueling was updated'
       redirect_to root_path
     else
-      flash[:alert] = @refueling.errors.full_messages.join('<br/>')
+      flash[:alert] = @refueling.errors.to_sentences.join('<br/>')
       render :edit
     end
   end
