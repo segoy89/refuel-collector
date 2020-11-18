@@ -1,5 +1,13 @@
 require 'simplecov'
-SimpleCov.start
+require 'coveralls'
+
+SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+SimpleCov.start do
+   add_filter 'app/reflexes/'
+   add_filter 'app/jobs/'
+   add_filter 'app/mailers/'
+   add_filter 'app/channels/'
+end
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'

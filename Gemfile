@@ -48,14 +48,14 @@ group :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
-  gem 'simplecov'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'coveralls', require: false
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'errors_to_sentences', '~> 0.1.0'
 gem 'redis'

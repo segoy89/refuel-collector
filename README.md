@@ -1,5 +1,7 @@
 # ⛽️ Refuelings collector
 
+[![Coverage Status](https://coveralls.io/repos/github/segoy89/refuelings-collector/badge.svg?branch=master)](https://coveralls.io/github/segoy89/refuelings-collector?branch=master)
+
 Simple app to helps you with tracking your car refuelings. Possible to store such information like:
 
 - `liters` - how much liters you tanked
