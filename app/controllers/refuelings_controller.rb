@@ -11,6 +11,7 @@ class RefuelingsController < ApplicationController
       liters:     refueling_params[:liters],
       kilometers: refueling_params[:kilometers]
     ).count
+
     if @refueling.save
       flash[:success] = 'Refueling was created'
       redirect_to root_path
@@ -25,6 +26,7 @@ class RefuelingsController < ApplicationController
       liters:     refueling_params[:liters],
       kilometers: refueling_params[:kilometers]
     ).count
+
     if @refueling.update(refueling_params)
       flash[:success] = 'Refueling was updated'
       redirect_to root_path
