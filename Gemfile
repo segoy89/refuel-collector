@@ -57,6 +57,8 @@ end
 
 gem 'coveralls', require: false
 gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'devise_token_auth'
 gem 'errors_to_sentences', '~> 0.1.0'
+gem 'rack-cors'
 gem 'redis'
 gem 'stimulus_reflex', '3.3.0.pre2' # bump version to 3.3.0.pre2 to use selector morphs
