@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :rememberable, :validatable
 
+  include DeviseTokenAuth::Concerns::User
+
   has_many :refuelings
 
   enum theme_color: { light_theme: 0, dark_theme: 1 }
