@@ -1,5 +1,11 @@
-class RefuelingsController < ApplicationController
-  before_action :load_refueling, except: %i[new create]
+# frozen_string_literal: true
+
+class RefuelingsController < BaseController
+  before_action :load_refueling, except: %i[index new create]
+
+  def index
+    @refuelings = current_user.refuelings.order(created_at: :desc)
+  end
 
   def new
     @refueling = current_user.refuelings.build

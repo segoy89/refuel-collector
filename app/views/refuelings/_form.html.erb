@@ -1,6 +1,6 @@
-<% path = @refueling.persisted? ? refueling_path : refueling_index_path %>
 
-<%= form_for @refueling, url: path do |f| %>
+
+<%= form_for @refueling do |f| %>
   <div class='flex flex-col md:flex-row'>
     <div class='flex-1 md:mr-8'>
       <div>

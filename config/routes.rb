@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users, skip: %i[password]
-  root to: 'home#index'
+  root to: 'refuelings#index'
 
-  resources :refueling, except: %i[index show], controller: 'refuelings'
+  resources :refuelings, except: %i[index show], controller: 'refuelings'
 end
