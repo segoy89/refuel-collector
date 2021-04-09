@@ -22,6 +22,10 @@ Deployed to `heroku`.
 
 <https://refueling.herokuapp.com/>
 
+## Mobile app
+
+<https://github.com/segoy89/refuelings_collector/>
+
 ## Techstack
 
 - Rails 6
