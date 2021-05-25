@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -57,6 +57,8 @@ end
 
 gem 'coveralls', require: false
 gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'devise_token_auth'
 gem 'errors_to_sentences', '~> 0.1.0'
+gem 'rack-cors'
 gem 'redis'
 gem 'stimulus_reflex', '3.3.0.pre2' # bump version to 3.3.0.pre2 to use selector morphs

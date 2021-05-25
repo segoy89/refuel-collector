@@ -1,6 +1,15 @@
-Rails.application.routes.draw do
-  devise_for :users
-  root to: 'home#index'
+# frozen_string_literal: true
 
-  resources :refueling, except: %i[index show], controller: 'refuelings'
+Rails.application.routes.draw do
+  devise_for :users, skip: %i[password]
+  root to: 'refuelings#index'
+
+  resources :refuelings, except: %i[index show], controller: 'refuelings'
+
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      mount_devise_token_auth_for 'User', at: '', controllers: { sessions: 'api/v1/sessions' }
+      resources :refuelings, except: %i[new show edit]
+    end
+  end
 end
