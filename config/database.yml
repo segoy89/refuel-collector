@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: refuel_collector_production
-  username: refuel_collector
-  password: <%= ENV['REFUEL_COLLECTOR_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

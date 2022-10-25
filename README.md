@@ -16,11 +16,11 @@ Using StimulusReflex to live update average fuel consumption.
 
 ## Demo
 
-Deployed to `heroku`.
+Deployed to `fly.io`.
 
  You can register with some fake email address - no confirmation needed.
 
-<https://refueling.herokuapp.com/>
+<https://refueling.fly.dev/>
 
 ## Mobile app
 
