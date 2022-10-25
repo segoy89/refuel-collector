@@ -59,6 +59,12 @@ gem 'coveralls', require: false
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'devise_token_auth'
 gem 'errors_to_sentences', '~> 0.1.0'
+gem 'hiredis'
+gem 'net-imap', require: false
+gem 'net-pop', require: false
+gem 'net-smtp', require: false
+gem 'psych', '< 4'
 gem 'rack-cors'
-gem 'redis'
+gem 'redis', '< 5.0', require: ['redis', 'redis/connection/hiredis']
+gem 'redis-session-store', '~> 0.11.4'
 gem 'stimulus_reflex', '3.3.0.pre2' # bump version to 3.3.0.pre2 to use selector morphs
