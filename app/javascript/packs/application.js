@@ -17,6 +17,8 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 import "stylesheets/application"
 import "controllers"
+import "config"
+import "channels"
 
 document.addEventListener('turbolinks:load', () => {
   let hamburger = document.getElementById('hamburger')

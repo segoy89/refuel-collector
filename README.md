@@ -28,6 +28,7 @@ Deployed to `fly.io`.
 
 ## Techstack
 
-- Rails 6
-- Ruby 2.7
+- Rails 7
+- Ruby 3.1
 - Postgresql
+- Node 16.20.2
